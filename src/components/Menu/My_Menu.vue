@@ -1,33 +1,20 @@
 <template>
     <div id="My_Menu">
-        <Menu mode="horizontal" :theme="theme1" active-key="3">
-            <Menu-item :name="k.value" v-for="k in keys" :key="k.key">
-                <Icon :type="k.type"></Icon>
-                <span>{{k.value}}</span>
-            </Menu-item>
-            <Submenu key="4" name="父菜单">
-                <template slot="title">
-                    <Icon type="stats-bars"></Icon>
-                    统计分析
-                </template>
-                <Menu-group title="使用">
-                    <Menu-item name="新增和启动" key="3-1">新增和启动</Menu-item>
-                    <Menu-item name="活跃分析" key="3-2">活跃分析</Menu-item>
-                    <Menu-item name="时段分析" key="3-3">时段分析</Menu-item>
-                </Menu-group>
-                <Menu-group title="留存">
-                    <Menu-item name="用户留存" key="3-4">用户留存</Menu-item>
-                    <Menu-item name="流失用户" key="3-5">流失用户</Menu-item>
-                </Menu-group>
-            </Submenu>
-        </Menu>
-        <br>
-        <p>切换主题</p>
-        <Radio-group :model.sync="theme1">
-            <Radio value="light"></Radio>
-            <Radio value="dark"></Radio>
-            <Radio value="primary"></Radio>
-        </Radio-group>
+        <at-menu mode="horizontal" active-name="1">
+            <at-menu-item name="1"><i class="icon icon-home"></i>导航菜单一</at-menu-item>
+            <at-menu-item name="2"><i class="icon icon-layers"></i>导航菜单二</at-menu-item>
+            <at-submenu>
+                <template slot="title"><i class="icon icon-life-buoy"></i>导航菜单三</template>
+                <at-menu-item name="3-1"><i class="icon icon-settings"></i>导航菜单四</at-menu-item>
+                <at-menu-item name="3-2"><i class="icon icon-settings"></i>导航菜单五</at-menu-item>
+                <at-submenu>
+                    <template slot="title"><i class="icon icon-life-buoy"></i>导航菜单六</template>
+                    <at-menu-item name="3-3-1"><i class="icon icon-settings"></i>导航菜单七</at-menu-item>
+                    <at-menu-item name="3-3-2"><i class="icon icon-settings"></i>导航菜单八</at-menu-item>
+                </at-submenu>
+            </at-submenu>
+            <at-menu-item name="4"><i class="icon icon-settings"></i>导航菜单四</at-menu-item>
+        </at-menu>
     </div>
 </template>
 
@@ -36,12 +23,7 @@
         name: "My_Menu",
         data: function () {
             return {
-                theme1: 'light',
-                keys: [
-                    {key: '1', value: '内容管理', type: 'ios-paper'},
-                    {key: '2', value: '用户管理', type: 'ios-people'},
-                    {key: '3', value: '综合设置', type: 'settings'},
-                ]
+
             };
         }
     }

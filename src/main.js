@@ -12,10 +12,11 @@ import { currency } from './assets/js/currency'
 
 Vue.filter('currency', currency)
 
-import iView from 'iview';
-import 'iview/dist/styles/iview.css';    // 使用 CSS
+import AtComponents from 'at-ui'
+import 'at-ui-style'    // 引入组件样式
 
-Vue.use(iView);
+Vue.use(AtComponents)
+
 
 //定义全局变量
 
