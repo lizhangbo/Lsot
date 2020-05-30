@@ -1,0 +1,3 @@
+# 防止 node_modules 和其他中间构建产物被复制到镜像中导致构建问题
+**/node_modules
+**/dist
