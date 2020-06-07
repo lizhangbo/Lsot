@@ -3,7 +3,7 @@
     <div id="base">
         <span>{{message}}</span><br>
         <at-input id="input_ser" v-model="inputValue" placeholder="输入提示"></at-input>
-        <at-table :columns="columns2" :data="data3" pagination></at-table>
+        <at-table :columns="columns2" :data="data3" pagination show-page-quickjump show-sizer></at-table>
 
         <button v-on:click="goToQuestions">点击去往试题页面</button><br>
         <router-link to="/Home/activityIndex">activityIndex</router-link><br>
@@ -49,7 +49,7 @@
         display: block;
     }
     #base{
-        width: 75%;
+        width: 50%;
         margin: 0 auto;
     }
 </style>

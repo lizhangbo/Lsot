@@ -2,20 +2,22 @@
  * 模拟数据
  */
 const _title1 =[
-    {title:'姓名',key:'name'},
-    {title:'年龄',key:'age',sortType: 'normal'},
-    {title:'地址',key:'address'}
+    {title:'序号',key:'seqNo'},
+    {title:'题目',key:'question',sortType: 'normal'},
+    {title:'通过率',key:'passRate'},
+    {title:'难度',key:'difficulty'}
 ]
 const _table1 =[
-    {name: '库里',age: 18,address: '深圳市宝安区创业一路'},
-    {name: '詹姆斯',age: 25,address: '广州市天河区岗顶'},
-    {name: '科比',age: 24,address: '上海市浦东新区'},
-    {name: '杜兰特',age: 22,address: '深圳市南山区深南大道'},
-    { name: '威斯布鲁克',age: 21,address: '北京市朝阳区'},
-    {name: '邓肯',age: 26,address: '深圳市罗湖区万象城'},
-    {name: '帕克',age: 25,address: '深圳市福田区中心书城'},
-    {name: '欧文',age: 20,address: '广州市番禺区大学城'},
-    {name: '托马斯',age: 19,address: '北京市朝阳区'}
+    {seqNo: '1',question: 'HashMap底层执行原理',passRate: '10%',difficulty:'简单'},
+    {seqNo: '2',question: 'Hashtable和ConcurrentHashMap如何实现线程安全？',passRate: '10%',difficulty:'简单'},
+    {seqNo: '3',question: 'JVM的内存布局和垃圾回收机制',passRate: '10%',difficulty:'一般'},
+    {seqNo: '4',question: '类加载机制和双亲委派模型',passRate: '10%',difficulty:'一般'},
+    {seqNo: '5',question: '阐述事务的隔离级别和传播属性',passRate: '10%',difficulty:'一般'},
+    {seqNo: '6',question: '高并发下，如何做到安全的修改同一行数据',passRate: '10%',difficulty:'困难'},
+    {seqNo: '7',question: 'A服务调用B服务多接口，响应时间最短方案',passRate: '10%',difficulty:'困难'},
+    {seqNo: '8',question: '动态代理的几种实现方式及优缺点',passRate: '10%',difficulty:'一般'},
+    {seqNo: '9',question: '按线程池内部机制，当提交新任务时需要考虑写什么？',passRate: '10%',difficulty:'一般'},
+    {seqNo: '10',question: 'Transactional标签',passRate: '10%',difficulty:'一般'},
 ]
 
 
