@@ -3,8 +3,8 @@
     <div id="base">
         <span>{{message}}</span><br>
         <at-input id="input_ser" v-model="inputValue" placeholder="输入提示"></at-input>
-        <at-table :columns="columns2" :data="data3" pagination show-page-quickjump show-sizer></at-table>
-
+        <!--<at-table :columns="columns2" :data="data3" optional pagination show-page-quickjump show-sizer></at-table>-->
+        <VTable :columns="columns2" :data="data3" optional pagination show-page-quickjump show-sizer></VTable>
         <button v-on:click="goToQuestions">点击去往试题页面</button><br>
         <router-link to="/Home/activityIndex">activityIndex</router-link><br>
         <router-link to="/Home/activityDetail">activityDetail</router-link>
@@ -15,8 +15,12 @@
 
 <script>
     import { mapState } from 'vuex'
+    import VTable from "../table/VTable";
     export default {
         name: "Home",
+        components:{
+            VTable
+        },
         data: function () {
             return {
                 "message": "这是HOME页面",
@@ -33,6 +37,9 @@
             },
             goToActive:function () {
                 this.$router.push('/Home/activityIndex')
+            },
+            tableChange:function () {
+                alert(1);
             }
         },
         created () {
