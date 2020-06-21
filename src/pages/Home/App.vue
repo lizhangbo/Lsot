@@ -31,7 +31,7 @@
     // import HelloWorld from './components/HelloWorld.vue';
     // import ProductList from './components/ProductList.vue'
     // import ShoppingCart from './components/ShoppingCart.vue'
-    import Menu from './components/Menu/My_Menu'
+    import Menu from '../../components/Menu/My_Menu'
 
     export default {
         name: 'App',

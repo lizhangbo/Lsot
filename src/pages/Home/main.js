@@ -2,13 +2,13 @@ import Vue from 'vue'
 import App from './App.vue'
 
 
-import router from './router/myRouter' // 导入路由文件
-import api from './api' // 导入api接口
+import router from './router/homeRouter' // 导入路由文件
+import api from '../../api' // 导入api接口
 
-import {server} from './api/server' //导入通讯接口
+import {server} from '../../api/server' //导入通讯接口
 
 import store from './store' // 导入vuex文件
-import { currency } from './assets/js/currency'
+import { currency } from '../../assets/js/currency'
 
 Vue.filter('currency', currency)
 

@@ -1,4 +1,4 @@
-import data from '../../api/data'
+import data from '../../../../api/data'
 
 // initial state
 const state = () => ({

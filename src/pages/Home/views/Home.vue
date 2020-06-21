@@ -6,8 +6,9 @@
         <!--<at-table :columns="columns2" :data="data3" optional pagination show-page-quickjump show-sizer></at-table>-->
         <VTable :columns="columns2" :data="data3" optional pagination show-page-quickjump show-sizer></VTable>
         <button v-on:click="goToQuestions">点击去往试题页面</button><br>
-        <router-link to="/Home/activityIndex">activityIndex</router-link><br>
-        <router-link to="/Home/activityDetail">activityDetail</router-link>
+        <a href="http://localhost:8080/Question#/">问题页面</a>
+<!--        <router-link to="/Home/activityIndex">activityIndex</router-link><br>
+        <router-link to="/Home/activityDetail">activityDetail</router-link>-->
     </div>
 </div>
 
@@ -15,7 +16,7 @@
 
 <script>
     import { mapState } from 'vuex'
-    import VTable from "../table/VTable";
+    import VTable from "../../../components/table/VTable";
     export default {
         name: "Home",
         components:{
@@ -33,11 +34,11 @@
         }),
         methods:{
             goToQuestions:function () {
-                this.$router.push('/ProductList')
+                this.$router.push('/Question')
             },
-            goToActive:function () {
-                this.$router.push('/Home/activityIndex')
-            },
+            // goToActive:function () {
+            //     this.$router.push('/Home/activityIndex')
+            // },
             tableChange:function () {
                 alert(1);
             }

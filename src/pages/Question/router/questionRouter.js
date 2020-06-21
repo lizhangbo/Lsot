@@ -6,10 +6,8 @@ Vue.use(VueRouter)
 
 // 1. 定义 (路由) 组件。
 // 可以从其他文件 import 进来
-import ProductList from "../components/ProductList";
-import Home from "../components/Home/Home";
-import activityIndex from "../components/Home/activityIndex";
-import activityDetail from "../components/Home/activityDetail";
+import ProductList from "../../../components/ProductList";
+import Question from "../views/Question";
 // import base from "../api/base";
 
 
@@ -19,31 +17,11 @@ import activityDetail from "../components/Home/activityDetail";
 // 或者，只是一个组件配置对象。
 // 我们晚点再讨论嵌套路由。
 const routes = [
-    {path:'/',redirect: 'Home/activityIndex'},
-    {path:'*',redirect: 'Home/activityIndex'},
     {
-        path: '/Home',
-        name: 'Home',
-        component: Home,
-        children:[
-            {
-                path: 'activityIndex',
-                name: 'activityIndex',
-                component:activityIndex
-            },
-            {
-                path: 'activityDetail',
-                name: 'activityDetail',
-                component: activityDetail
-            }
-        ]
-    },
-    {
-        path: '/ProductList',
-        name: ProductList,
-        component: ProductList
+        path: '/',
+        name: 'Question',
+        component: Question
     }
-
 ];
 
 // 3. 创建 router 实例，然后传 `routes` 配置
