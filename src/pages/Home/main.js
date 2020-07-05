@@ -3,9 +3,8 @@ import App from './App.vue'
 
 
 import router from './router/homeRouter' // 导入路由文件
-import api from '../../api' // 导入api接口
+import api from '../../api/index' // 导入api接口
 
-import {server} from '../../api/server' //导入通讯接口
 
 import store from './store' // 导入vuex文件
 import { currency } from '../../assets/js/currency'
@@ -20,7 +19,6 @@ Vue.use(AtComponents)
 
 //定义全局变量
 
-Vue.prototype.$server=server;
 Vue.prototype.$api = api; // 将api挂载到vue的原型上复制代码
 
 

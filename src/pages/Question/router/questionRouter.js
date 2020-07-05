@@ -8,6 +8,8 @@ Vue.use(VueRouter)
 // 可以从其他文件 import 进来
 import ProductList from "../../../components/ProductList";
 import Question from "../views/Question";
+import addRelease from "../views/addRelease";
+import viewRelease from "../views/viewRelease";
 // import base from "../api/base";
 
 
@@ -21,6 +23,16 @@ const routes = [
         path: '/',
         name: 'Question',
         component: Question
+    },
+    {
+        path: '/addRelease',
+        name: 'addRelease',
+        component: addRelease
+    },
+    {
+        path: '/viewRelease',
+        name: 'viewRelease',
+        component: viewRelease
     }
 ];
 

@@ -1,5 +1,8 @@
 <template>
-    <span>question view</span>
+    <div id="Question">
+        <span>question view</span><br>
+        <router-link to="/addRelease">发布文章</router-link><br>
+    </div>
 </template>
 
 <script>

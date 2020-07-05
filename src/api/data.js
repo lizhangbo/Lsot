@@ -8,7 +8,7 @@ const _title1 =[
     {title:'难度',key:'difficulty'}
 ]
 const _table1 =[
-    {seqNo: '1',question: 'HashMap底层执行原理',passRate: '20%',difficulty:'简单',url:"https://www.baidu.com"},
+    {seqNo: '1',question: 'HashMap底层执行原理',passRate: '20%',difficulty:'简单',url:"Question.vue"},
     {seqNo: '2',question: 'Hashtable和ConcurrentHashMap如何实现线程安全？',passRate: '10%',difficulty:'简单',url:"https://www.baidu.com"},
     {seqNo: '3',question: 'JVM的内存布局和垃圾回收机制',passRate: '10%',difficulty:'一般',url:"https://www.baidu.com"},
     {seqNo: '4',question: '类加载机制和双亲委派模型',passRate: '10%',difficulty:'一般',url:false},

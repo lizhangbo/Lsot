@@ -62,14 +62,6 @@
                     console.log(res);
                 })
             },
-            exam: function () {
-                let paramObj = {
-                    uid: '123456'
-                }
-                this.$server.exam(paramObj).then(data => {
-                    console.log(data)
-                })
-            },
             goBack() {
                 window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')
             }

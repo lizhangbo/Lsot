@@ -10,7 +10,8 @@ glob.sync('./src/pages/**/main.js').forEach(filePath => {
         entry: filePath,
         template: 'public/index.html',
         title: titles[chunk],
-        chunks: ['chunk-vendors', 'chunk-common', chunk]
+        chunks: ['chunk-vendors', 'chunk-common', chunk],
+        faviconPath:'/'+chunk+'.ico'
     }
 })
 module.exports = {
